@@ -1,15 +1,20 @@
 [Unit]
-Description=Small description of the service
-After=network.target
+Description=Overseerr Daemon
+After=syslog.target network.target
 
 [Service]
 Type=simple
 User=__APP__
 Group=__APP__
 WorkingDirectory=__FINALPATH__/
-ExecStart=__FINALPATH__/script
+ExecStart=__FINALPATH__/script //TODO
+
 StandardOutput=append:/var/log/__APP__/__APP__.log
 StandardError=inherit
+
+TimeoutStopSec=20
+KillMode=process
+Restart=always
 
 # Sandboxing options to harden security
 # Depending on specificities of your service/app, you may need to tweak these

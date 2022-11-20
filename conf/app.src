@@ -1,5 +1,5 @@
-SOURCE_URL=url of app's source
-SOURCE_SUM=sha256 checksum
+SOURCE_URL=https://github.com/sct/overseerr/archive/refs/tags/v1.30.1.tar.gz
+SOURCE_SUM=dfe35acd8528172a938a1ace94a02bbb56283c5213dbe4dab8cb5d2907fc7058
 SOURCE_SUM_PRG=sha256sum
 SOURCE_FORMAT=tar.gz
 SOURCE_IN_SUBDIR=true
